@@ -23,7 +23,6 @@ app.use(errorController.get404);
 
 // app.listen(3000);
 
-mongoConnect(client=>{
-    console.log(client);
+mongoConnect(()=>{
     app.listen(3000);
 });
